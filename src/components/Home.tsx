@@ -1,9 +1,9 @@
-
+import cover from "../assets/poster2.jpg"
 
 const Home = () =>{
     return(
         <div id="home">
-            <img src="../../public/poster2.jpg" alt="" />
+            <img src={cover} alt="" />
         </div>
     )
 }
