@@ -1,4 +1,4 @@
-// import ColorChanger from "./components/ColorChanger";
+import ColorChanger from "./components/ColorChanger";
 import Discounts from "./components/Discounts";
 // import Events from "./components/Events";
 import Footer from "./components/Footer";
@@ -18,8 +18,8 @@ function App() {
       <ProjectEngine />
       <WorkShops />
       <img  className="mt-10 mb-10 w-full" src={background} alt="" />
-      {/* <ColorChanger/>
-      <Events/> */}
+      <ColorChanger/>
+      {/* <Events/> */}
       <Footer/>
     </div>
   );
