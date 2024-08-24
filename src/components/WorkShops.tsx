@@ -16,18 +16,18 @@ import background from "/src/assets/stock-vector-vector-abstract-elegant-white-a
 
 const WorkShops: React.FC = () => {
   const images = [
-    {"name": first },
-    { "name": seconed },
-    { "name":third },
-    { "name":forth },
-    { "name":fifth },
-    { "name":sixth },
-    { "name":seven },
-    { "name":eight },
-    {"name": nine },
-    { "name":ten },
-    {"name": eleven },
-    { "name":twelve },
+    {name: first },
+    { name: seconed },
+    { name:third },
+    { name:forth },
+    { name:fifth },
+    { name:sixth },
+    { name:seven },
+    { name:eight },
+    {name: nine },
+    { name:ten },
+    {name: eleven },
+    { name:twelve },
   ];
 
   return (
