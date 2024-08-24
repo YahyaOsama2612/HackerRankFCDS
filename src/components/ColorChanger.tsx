@@ -5,12 +5,10 @@ import seconed from  "/src/assets/committees/426216923_810358867772998_470054367
 import third from  "/src/assets/committees/426358374_810358824439669_7917421702513469851_n.jpg";
 import forth from  "/src/assets/committees/426484463_812377714237780_2031385671984382527_n.jpg";
 import fifth from "/src/assets/committees/426513817_812377394237812_160985539812957006_n.jpg";
-import sixth from "/src/assets/committees/426513817_812377394237812_160985539812957006_n.jpg";
-import seven from  "/src/assets/committees/426544874_812377434237808_6165946909755775755_n.jpg";
-import eight from  "/src/assets/committees/426544874_812377434237808_6165946909755775755_n.jpg";
-import nine from  "/src/assets/committees/432049395_831263309015887_1589484039942064045_n.jpg";
-import ten from  "/src/assets/committees/432712631_831263575682527_1275090964012417970_n.jpg";
-
+import sixth from  "/src/assets/committees/426544874_812377434237808_6165946909755775755_n.jpg";
+import seven from  "/src/assets/committees/432049395_831263309015887_1589484039942064045_n.jpg";
+import eight from  "/src/assets/committees/432712631_831263575682527_1275090964012417970_n.jpg";
+import photo from  "/src/assets/download(3).svg";
 
 const ColorChanger = () => {
   const colors = [
@@ -30,8 +28,6 @@ const ColorChanger = () => {
     { name:sixth },
     { name:seven },
     { name:eight },
-    {name: nine },
-    { name:ten },
   ];
 
   const [currentColorIndex, setCurrentColorIndex] = useState(0);
@@ -59,7 +55,7 @@ const ColorChanger = () => {
           <img
             className="transform sm:-translate-y-32 sm:-translate-x-10"
             style={{ height: "150px", margin: "0 5px 50px 20px" }}
-            src="/src/assets/download(3).svg"
+            src={photo}
             alt=""
           />
           <p className="text-center sm:text-left text-lg sm:text-xl font-bold mb-32 sm:-translate-y-20 px-4 sm:px-0">

@@ -12,7 +12,8 @@ import nine from "/src/assets/C/417519503_807805978028287_3257971967889045008_n.
 import ten from "/src/assets/OOP/447661064_882945573847660_7282231300223932777_n.jpg";
 import eleven from "/src/assets/OOP/447733296_882945490514335_4513038464569075097_n.jpg";
 import twelve from "/src/assets/OOP/447771209_882945443847673_3002782296898575143_n.jpg";
-import background from "/src/assets/stock-vector-vector-abstract-elegant-white-and-grey-background-abstract-white-pattern-squares-texture-722377342.jpg"
+import background from "/src/assets/stock-vector-vector-abstract-elegant-white-and-grey-background-abstract-white-pattern-squares-texture-722377342.jpg";
+import photo from "/src/assets/download.svg(1).svg";
 
 const WorkShops: React.FC = () => {
   const images = [
@@ -45,7 +46,7 @@ const WorkShops: React.FC = () => {
       <div className="flex flex-col sm:flex-row items-center sm:items-start px-4 sm:px-20">
         <img
           className="transform -translate-y-8 sm:-translate-y-32 sm:-translate-x-10 h-40 sm:h-72"
-          src="/src/assets/download.svg(1).svg"
+          src={photo}
           alt=""
         />
         <p className="text-center sm:text-left text-lg sm:text-xl font-bold mb-4 sm:ml-6">
