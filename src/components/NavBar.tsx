@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import logo from "/src/assets/hackerrank8164.logowik.com.webp"
 
 const NavBar = () => {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
@@ -25,7 +26,7 @@ const NavBar = () => {
       className="d-flex flex-col md:flex-row justify-between items-center md:items-start"
     >
       <img
-        src="/src/assets/hackerrank8164.logowik.com.webp"
+        src={logo}
         alt=""
         style={{
           width: isSmallScreen ? "150px" : "250px",

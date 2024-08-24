@@ -6,6 +6,7 @@ import Home from "./components/Home";
 import NavBar from "./components/NavBar";
 import ProjectEngine from "./components/ProjectEngine";
 import WorkShops from "./components/WorkShops";
+import background from "/src/assets/1723813756047.jpg"
 
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
       <Discounts/>
       <ProjectEngine />
       <WorkShops />
-      <img  className="mt-10 mb-10 w-full" src="/src/assets/1723813756047.jpg" alt="" />
+      <img  className="mt-10 mb-10 w-full" src={background} alt="" />
       <ColorChanger/>
       <Events/>
       <Footer/>

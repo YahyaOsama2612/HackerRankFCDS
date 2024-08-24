@@ -1,4 +1,14 @@
-import React from "react";
+import React from "react"
+import everyday from "/src/assets/discounts/899043ca-70da-4203-a63a-c95490b71d99.jfif"
+import pes from "/src/assets/discounts/b48f9f26-e983-488d-af0f-8d4e2cb5dc10.jfif"
+import FlorenzaAdvertising from "/src/assets/discounts/befb22bb-dc06-47f3-bad4-850887d196db.jfif"
+import EraaSoft from "/src/assets/discounts/842ede5e-baf0-4229-8840-51276c45c37f.jfif"
+import khwater from "/src/assets/discounts/1b93c06f-ac06-4734-b627-b589e6e345b2.jfif"
+import TrueTechnology from "/src/assets/discounts/1b93c06f-ac06-4734-b627-b589e6e345b2.jfif"
+import MoatzNehal from "/src/assets/discounts/f67b55c2-4d65-4f3c-8bae-d0da1fc9a5ed.jfif"
+
+
+
 
 const Discounts: React.FC = () => {
   return (
@@ -9,7 +19,7 @@ const Discounts: React.FC = () => {
       <div className="text-center">
         <img
           className="w-[130px] mx-auto"
-          src="/src/assets/discounts/899043ca-70da-4203-a63a-c95490b71d99.jfif"
+          src={everyday}
           alt="EveryDay"
         />
         <h2 className="font-bold">EveryDay</h2>
@@ -28,7 +38,7 @@ const Discounts: React.FC = () => {
       <div className="text-center">
         <img
           className="w-[130px] mx-auto"
-          src="/src/assets/discounts/b48f9f26-e983-488d-af0f-8d4e2cb5dc10.jfif"
+          src={pes}
           alt="pes"
         />
         <h2 className="font-bold">pes</h2>
@@ -38,7 +48,7 @@ const Discounts: React.FC = () => {
       <div className="text-center">
         <img
           className="w-[130px] mx-auto"
-          src="/src/assets/discounts/befb22bb-dc06-47f3-bad4-850887d196db.jfif"
+          src={FlorenzaAdvertising}
           alt="Florenza Advertising"
         />
         <h2 className="font-bold">Florenza Advertising</h2>
@@ -56,7 +66,7 @@ const Discounts: React.FC = () => {
       <div className="text-center">
         <img
           className="w-[130px] mx-auto"
-          src="/src/assets/discounts/842ede5e-baf0-4229-8840-51276c45c37f.jfif"
+          src={EraaSoft}
           alt="EraaSoft"
         />
         <h2 className="font-bold">EraaSoft</h2>
@@ -74,7 +84,7 @@ const Discounts: React.FC = () => {
       <div className="text-center">
         <img
           className="w-[130px] mx-auto"
-          src="/src/assets/discounts/bdc8104f-e8c4-43c6-95c9-e00b0693b023.jfif"
+          src={khwater}
           alt="khwater"
         />
         <h2 className="font-bold">khwater</h2>
@@ -84,7 +94,7 @@ const Discounts: React.FC = () => {
       <div className="text-center">
         <img
           className="w-[130px] mx-auto"
-          src="/src/assets/discounts/1b93c06f-ac06-4734-b627-b589e6e345b2.jfif"
+          src={TrueTechnology}
           alt="True Technology"
         />
         <h2 className="font-bold">True Technology</h2>
@@ -104,7 +114,7 @@ const Discounts: React.FC = () => {
       <div className="text-center">
         <img
           className="w-[130px] mx-auto"
-          src="/src/assets/discounts/f67b55c2-4d65-4f3c-8bae-d0da1fc9a5ed.jfif"
+          src={MoatzNehal}
           alt="Moatz & Nehal"
         />
         <h2 className="font-bold">Moatz & Nehal</h2>

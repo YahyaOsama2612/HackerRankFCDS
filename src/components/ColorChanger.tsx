@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import ImageSlider from "./ImageSlider";
 
+
 const ColorChanger = () => {
   const colors = [
     "bg-gray-300",

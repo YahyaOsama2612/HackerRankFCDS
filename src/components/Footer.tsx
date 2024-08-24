@@ -1,4 +1,5 @@
 import React from "react";
+import logo from "/src/assets/hackerrank8164.logowik.com.webp"
 
 const Footer: React.FC = () => {
   return (
@@ -8,7 +9,7 @@ const Footer: React.FC = () => {
           <div className="flex-1 text-center md:text-left">
             <h2 className="text-xl font-bold mb-2">Company Name</h2>
             <img
-              src="/src/assets/hackerrank8164.logowik.com.webp"
+              src={logo}
               alt="Company Logo"
               className="mx-auto md:mx-0"
               style={{ height: "100px" }}
