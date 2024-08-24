@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 
 interface ImageSliderProps {
-  images: string[];
+  images: {name:string}[];
 }
 
 const ImageSlider: React.FC<ImageSliderProps> = ({ images }) => {

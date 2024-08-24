@@ -1,5 +1,8 @@
 import React from "react";
 import Button from "./Button";
+import photo from "/src/assets/download.svg"
+import image from "/src/assets/WhatsApp Image 2024-08-16 at 1.38.30 PM.jpeg"
+import background from "/src/assets/360_F_275289557_YptaQZDnGnDkcgm8b792ItXOqvvkTQAr.jpg"
 
 const ProjectEngine: React.FC = () => {
   return (
@@ -8,14 +11,14 @@ const ProjectEngine: React.FC = () => {
       className="mt-40 bg-cover bg-center"
       style={{
         backgroundImage:
-          "url('/src/assets/360_F_275289557_YptaQZDnGnDkcgm8b792ItXOqvvkTQAr.jpg')",
+          `url(${background})`,
       }}
     >
       <div className="flex flex-col lg:flex-row justify-around items-center p-8">
         <div className="text-center lg:text-left mb-8 lg:mb-0">
           <img
             className="h-48 lg:h-52 mt-5 mx-auto lg:mx-0"
-            src="/src/assets/download.svg"
+            src={photo}
             alt=""
           />
           <a href="https://forms.gle/TRqmnEq1axpZjx5e9">
@@ -35,7 +38,7 @@ const ProjectEngine: React.FC = () => {
           </p>
           <img
             className="h-72 lg:h-80 mt-5 lg:mt-0 lg:ml-8"
-            src="/src/assets/WhatsApp Image 2024-08-16 at 1.38.30 PM.jpeg"
+            src={image}
             alt=""
           />
         </div>
