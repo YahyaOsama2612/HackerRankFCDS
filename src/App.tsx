@@ -1,6 +1,6 @@
 import ColorChanger from "./components/ColorChanger";
 import Discounts from "./components/Discounts";
-// import Events from "./components/Events";
+import Events from "./components/Events";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
 import NavBar from "./components/NavBar";
@@ -19,7 +19,7 @@ function App() {
       <WorkShops />
       <img  className="mt-10 mb-10 w-full" src={background} alt="" />
       <ColorChanger/>
-      {/* <Events/> */}
+      <Events/>
       <Footer/>
     </div>
   );
