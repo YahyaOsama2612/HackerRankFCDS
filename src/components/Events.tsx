@@ -15,6 +15,8 @@ import twelve from "/src/assets/Events/367738008_701452815330271_871426088724851
 import thirteen from "/src/assets/Events/367753380_701452381996981_8504661203303337802_n.jpg";
 import fourteen from "/src/assets/Events/367938545_701452425330310_6265727126313980405_n.jpg";
 import fifteen from "/src/assets/Events/367966299_701459061996313_2319708751290274918_n.jpg";
+import photo from "/src/assets/download (2).svg";
+import background from "/src/assets/stock-vector-vector-abstract-elegant-white-and-grey-background-abstract-white-pattern-squares-texture-722377342.jpg"
 
 
 const Events: React.FC = () => {
@@ -41,7 +43,7 @@ const Events: React.FC = () => {
       className="space-y-24 mt-56 bg-cover bg-center"
       style={{
         backgroundImage:
-          "url('/src/assets/stock-vector-vector-abstract-elegant-white-and-grey-background-abstract-white-pattern-squares-texture-722377342.jpg')",
+          `url(${background})`,
       }}
     >
       <hr />
@@ -51,7 +53,7 @@ const Events: React.FC = () => {
       <div className="flex flex-col-reverse md:flex-row items-center">
         <img
           className="transform -translate-y-10 sm:-translate-y-20 md:-translate-y-32 md:-translate-x-10 w-48 sm:w-64 md:w-72 lg:w-80"
-          src="/src/assets/download (2).svg"
+          src={photo}
           alt=""
         />
         <p className="text-center md:text-left text-lg sm:text-xl font-bold mb-4 md:w-1/2 mx-4">
