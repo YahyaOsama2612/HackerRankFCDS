@@ -1,7 +1,7 @@
-import React from "react";
+import { memo } from "react";
 import logo from "/src/assets/hackerrank8164.logowik.com.webp"
 
-const Footer: React.FC = () => {
+const Footer = () => {
   return (
     <footer id="contact" className="bg-gray-800 text-white py-8">
       <div className="container mx-auto px-4">
@@ -128,4 +128,4 @@ const Footer: React.FC = () => {
   );
 };
 
-export default Footer;
+export default memo(Footer) ;

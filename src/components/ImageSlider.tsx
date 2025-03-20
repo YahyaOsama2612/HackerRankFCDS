@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { memo, useState } from "react";
 
 
 interface ImageSliderProps {
@@ -60,4 +60,4 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ images }) => {
   );
 };
 
-export default ImageSlider;
+export default memo(ImageSlider) ;

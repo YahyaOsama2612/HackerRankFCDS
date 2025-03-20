@@ -1,3 +1,4 @@
+import { memo } from "react"
 import cover from "../assets/poster2.jpg"
 
 const Home = () =>{
@@ -8,4 +9,4 @@ const Home = () =>{
     )
 }
 
-export default Home
+export default memo(Home) 

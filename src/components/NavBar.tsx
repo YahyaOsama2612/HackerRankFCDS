@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, memo } from "react";
 import logo from "/src/assets/hackerrank8164.logowik.com.webp"
 
 const NavBar = () => {
@@ -9,10 +9,10 @@ const NavBar = () => {
       setIsSmallScreen(window.innerWidth <= 768);
     };
 
-    handleResize(); // Check screen size on component mount
-    window.addEventListener("resize", handleResize); // Add resize event listener
+    handleResize(); 
+    window.addEventListener("resize", handleResize);
 
-    return () => window.removeEventListener("resize", handleResize); // Clean up the event listener
+    return () => window.removeEventListener("resize", handleResize); 
   }, []);
 
   return (
@@ -80,4 +80,4 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+export default memo(NavBar) ;

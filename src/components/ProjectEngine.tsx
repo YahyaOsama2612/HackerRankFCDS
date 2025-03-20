@@ -1,10 +1,10 @@
-import React from "react";
 import Button from "./Button";
 import photo from "/src/assets/download.svg"
 import image from "/src/assets/WhatsApp Image 2024-08-16 at 1.38.30 PM.jpeg"
 import background from "/src/assets/360_F_275289557_YptaQZDnGnDkcgm8b792ItXOqvvkTQAr.jpg"
+import { memo } from "react";
 
-const ProjectEngine: React.FC = () => {
+const ProjectEngine = () => {
   return (
     <div
       id="project"
@@ -47,4 +47,4 @@ const ProjectEngine: React.FC = () => {
   );
 };
 
-export default ProjectEngine;
+export default memo(ProjectEngine) ;

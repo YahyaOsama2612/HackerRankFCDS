@@ -1,4 +1,4 @@
-import React from "react";
+import { memo } from "react";
 import ImageSlider from "./ImageSlider";
 import first from "/src/assets/Events/277520565_502209251625478_2664668823069627075_n.jpg";
 import seconed from "/src/assets/Events/277527908_502212544958482_5849378512803868966_n.jpg";
@@ -19,7 +19,7 @@ import photo from "/src/assets/download (2).svg";
 import background from "/src/assets/stock-vector-vector-abstract-elegant-white-and-grey-background-abstract-white-pattern-squares-texture-722377342.jpg"
 
 
-const Events: React.FC = () => {
+const Events = () => {
   const images = [
     {name: first },
     { name: seconed },
@@ -67,4 +67,4 @@ const Events: React.FC = () => {
   );
 };
 
-export default Events;
+export default memo(Events) ;

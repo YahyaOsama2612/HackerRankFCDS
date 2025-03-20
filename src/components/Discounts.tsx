@@ -2,6 +2,7 @@ import everyday from "/src/assets/discounts/899043ca-70da-4203-a63a-c95490b71d99
 import FlorenzaAdvertising from "/src/assets/discounts/befb22bb-dc06-47f3-bad4-850887d196db.jfif";
 import EraaSoft from "/src/assets/discounts/842ede5e-baf0-4229-8840-51276c45c37f.jfif";
 import TrueTechnology from "/src/assets/discounts/1b93c06f-ac06-4734-b627-b589e6e345b2.jfif";
+import { memo } from "react";
 
 const Discounts = () => {
   return (
@@ -9,7 +10,6 @@ const Discounts = () => {
       id="sponser"
       className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-[50px] gap-[30px] px-4 md:px-8"
     >
-      {/* EveryDay */}
       <div className="text-center bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
         <img className="w-[130px] mx-auto mb-4" src={everyday} alt="EveryDay" />
         <h2 className="font-semibold text-lg text-gray-800 mb-2">EveryDay</h2>
@@ -27,7 +27,6 @@ const Discounts = () => {
         <span className="block mt-4 text-sm text-gray-500">code: event20</span>
       </div>
 
-      {/* Florenza Advertising */}
       <div className="text-center bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
         <img
           className="w-[130px] mx-auto mb-4"
@@ -50,7 +49,6 @@ const Discounts = () => {
         </p>
       </div>
 
-      {/* EraaSoft */}
       <div className="text-center bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
         <img className="w-[130px] mx-auto mb-4" src={EraaSoft} alt="EraaSoft" />
         <h2 className="font-semibold text-lg text-gray-800 mb-2">EraaSoft</h2>
@@ -67,7 +65,6 @@ const Discounts = () => {
         </p>
       </div>
 
-      {/* True Technology */}
       <div className="text-center bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
         <img
           className="w-[130px] mx-auto mb-4"
@@ -93,4 +90,4 @@ const Discounts = () => {
   );
 };
 
-export default Discounts;
+export default memo(Discounts) ;

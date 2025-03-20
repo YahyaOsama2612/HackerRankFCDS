@@ -1,4 +1,3 @@
-import React from "react";
 import ImageSlider from "./ImageSlider";
 import first from "/src/assets/WORK/452297630_915024517306432_8715230458842874826_n.jpg";
 import seconed from "/src/assets/WORK/452989004_915024290639788_1365287173615719826_n.jpg";
@@ -14,8 +13,9 @@ import eleven from "/src/assets/OOP/447733296_882945490514335_451303846456907509
 import twelve from "/src/assets/OOP/447771209_882945443847673_3002782296898575143_n.jpg";
 import background from "/src/assets/stock-vector-vector-abstract-elegant-white-and-grey-background-abstract-white-pattern-squares-texture-722377342.jpg";
 import photo from "/src/assets/download.svg(1).svg";
+import { memo } from "react";
 
-const WorkShops: React.FC = () => {
+const WorkShops = () => {
   const images = [
     {name: first },
     { name: seconed },
@@ -62,4 +62,4 @@ const WorkShops: React.FC = () => {
   );
 };
 
-export default WorkShops;
+export default memo(WorkShops) ;

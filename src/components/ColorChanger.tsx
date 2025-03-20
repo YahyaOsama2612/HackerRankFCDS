@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, memo } from "react";
 import ImageSlider from "./ImageSlider";
 import first from  "/src/assets/committees/426210812_810359067772978_6432805786170877286_n.jpg";
 import seconed from  "/src/assets/committees/426216923_810358867772998_470054367525324257_n.jpg";
@@ -72,4 +72,4 @@ const ColorChanger = () => {
   );
 };
 
-export default ColorChanger;
+export default memo(ColorChanger) ;
