@@ -1,29 +1,21 @@
-import React from "react"
-import everyday from "/src/assets/discounts/899043ca-70da-4203-a63a-c95490b71d99.jfif"
-import pes from "/src/assets/discounts/b48f9f26-e983-488d-af0f-8d4e2cb5dc10.jfif"
-import FlorenzaAdvertising from "/src/assets/discounts/befb22bb-dc06-47f3-bad4-850887d196db.jfif"
-import EraaSoft from "/src/assets/discounts/842ede5e-baf0-4229-8840-51276c45c37f.jfif"
-import khwater from "/src/assets/discounts/1b93c06f-ac06-4734-b627-b589e6e345b2.jfif"
-import TrueTechnology from "/src/assets/discounts/1b93c06f-ac06-4734-b627-b589e6e345b2.jfif"
-import MoatzNehal from "/src/assets/discounts/f67b55c2-4d65-4f3c-8bae-d0da1fc9a5ed.jfif"
+import everyday from "/src/assets/discounts/899043ca-70da-4203-a63a-c95490b71d99.jfif";
+import FlorenzaAdvertising from "/src/assets/discounts/befb22bb-dc06-47f3-bad4-850887d196db.jfif";
+import EraaSoft from "/src/assets/discounts/842ede5e-baf0-4229-8840-51276c45c37f.jfif";
+import TrueTechnology from "/src/assets/discounts/1b93c06f-ac06-4734-b627-b589e6e345b2.jfif";
 
-
-
-
-const Discounts: React.FC = () => {
+const Discounts = () => {
   return (
     <div
       id="sponser"
-      className="flex flex-wrap justify-center mt-[50px] gap-[50px] sm:gap-[100px]"
+      className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-[50px] gap-[30px] px-4 md:px-8"
     >
-      <div className="text-center">
-        <img
-          className="w-[130px] mx-auto"
-          src={everyday}
-          alt="EveryDay"
-        />
-        <h2 className="font-bold">EveryDay</h2>
-        <span>20% discount for first 100 attendees</span>
+      {/* EveryDay */}
+      <div className="text-center bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+        <img className="w-[130px] mx-auto mb-4" src={everyday} alt="EveryDay" />
+        <h2 className="font-semibold text-lg text-gray-800 mb-2">EveryDay</h2>
+        <span className="block text-gray-600 mb-4">
+          20% discount for first 100 attendees
+        </span>
         <p>
           <a
             href="https://www.facebook.com/share/yMCVndoQQxQrPWuk/?mibextid=qi2Omg"
@@ -32,27 +24,22 @@ const Discounts: React.FC = () => {
             Go to page
           </a>
         </p>
-        <span>code: event20</span>
+        <span className="block mt-4 text-sm text-gray-500">code: event20</span>
       </div>
 
-      <div className="text-center">
+      {/* Florenza Advertising */}
+      <div className="text-center bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
         <img
-          className="w-[130px] mx-auto"
-          src={pes}
-          alt="pes"
-        />
-        <h2 className="font-bold">pes</h2>
-        <span>20% discount</span>
-      </div>
-
-      <div className="text-center">
-        <img
-          className="w-[130px] mx-auto"
+          className="w-[130px] mx-auto mb-4"
           src={FlorenzaAdvertising}
           alt="Florenza Advertising"
         />
-        <h2 className="font-bold">Florenza Advertising</h2>
-        <span>25% discount to CTRL A attendees</span>
+        <h2 className="font-semibold text-lg text-gray-800 mb-2">
+          Florenza Advertising
+        </h2>
+        <span className="block text-gray-600 mb-4">
+          25% discount to CTRL A attendees
+        </span>
         <p>
           <a
             href="https://www.facebook.com/florenzaadvertising?mibextid=ZbWKwL"
@@ -63,14 +50,13 @@ const Discounts: React.FC = () => {
         </p>
       </div>
 
-      <div className="text-center">
-        <img
-          className="w-[130px] mx-auto"
-          src={EraaSoft}
-          alt="EraaSoft"
-        />
-        <h2 className="font-bold">EraaSoft</h2>
-        <span>15% discount on courses</span>
+      {/* EraaSoft */}
+      <div className="text-center bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+        <img className="w-[130px] mx-auto mb-4" src={EraaSoft} alt="EraaSoft" />
+        <h2 className="font-semibold text-lg text-gray-800 mb-2">EraaSoft</h2>
+        <span className="block text-gray-600 mb-4">
+          15% discount on courses
+        </span>
         <p>
           <a
             href="https://www.facebook.com/eraasoft"
@@ -81,24 +67,17 @@ const Discounts: React.FC = () => {
         </p>
       </div>
 
-      <div className="text-center">
+      {/* True Technology */}
+      <div className="text-center bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
         <img
-          className="w-[130px] mx-auto"
-          src={khwater}
-          alt="khwater"
-        />
-        <h2 className="font-bold">khwater</h2>
-        <span>20% discount</span>
-      </div>
-
-      <div className="text-center">
-        <img
-          className="w-[130px] mx-auto"
+          className="w-[130px] mx-auto mb-4"
           src={TrueTechnology}
           alt="True Technology"
         />
-        <h2 className="font-bold">True Technology</h2>
-        <span>
+        <h2 className="font-semibold text-lg text-gray-800 mb-2">
+          True Technology
+        </h2>
+        <span className="block text-gray-600 mb-4">
           30% discount on maintenance and discounts on laptops up to 500 LE
         </span>
         <p>
@@ -109,15 +88,6 @@ const Discounts: React.FC = () => {
             Go to page
           </a>
         </p>
-      </div>
-
-      <div className="text-center">
-        <img
-          className="w-[130px] mx-auto"
-          src={MoatzNehal}
-          alt="Moatz & Nehal"
-        />
-        <h2 className="font-bold">Moatz & Nehal</h2>
       </div>
     </div>
   );
