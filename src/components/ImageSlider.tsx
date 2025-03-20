@@ -5,7 +5,7 @@ interface ImageSliderProps {
   images: {name:string}[];
 }
 
-const ImageSlider: React.FC<ImageSliderProps> = ({ images }) => {
+const ImageSlider = ({ images }:ImageSliderProps) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const prevSlide = () => {
@@ -60,4 +60,5 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ images }) => {
   );
 };
 
-export default memo(ImageSlider) ;
+export default memo(ImageSlider) 
+
