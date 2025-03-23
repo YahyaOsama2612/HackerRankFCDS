@@ -22,7 +22,7 @@ const ProjectEngine = () => {
             alt=""
           />
           <a href="https://forms.gle/TRqmnEq1axpZjx5e9">
-            <Button className="mx-auto lg:mx-36 my-8 lg:my-16">Join</Button>
+            <Button className=" cursor-pointer mx-auto lg:mx-36 my-8 lg:my-16">Join</Button>
           </a>
         </div>
         <div className="flex flex-col lg:flex-row items-center">
