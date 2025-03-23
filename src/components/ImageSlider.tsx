@@ -40,7 +40,7 @@ const ImageSlider = ({ images }:ImageSliderProps) => {
       </div>
       <button
         onClick={prevSlide}
-        className="absolute left-2 sm:left-4 md:left-6 lg:left-8 top-1/2 transform -translate-y-1/2 bg-green-500 px-2 py-1 rounded"
+        className="cursor-pointer absolute left-2 sm:left-4 md:left-6 lg:left-8 top-1/2 transform -translate-y-1/2 bg-green-500 px-2 py-1 rounded"
       >
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
           <path d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8.009 8.009 0 0 1-8 8z" />
@@ -49,7 +49,7 @@ const ImageSlider = ({ images }:ImageSliderProps) => {
       </button>
       <button
         onClick={nextSlide}
-        className="absolute right-2 sm:right-4 md:right-6 lg:right-8 top-1/2 transform -translate-y-1/2 bg-green-500 px-2 py-1 rounded"
+        className="cursor-pointer absolute right-2 sm:right-4 md:right-6 lg:right-8 top-1/2 transform -translate-y-1/2 bg-green-500 px-2 py-1 rounded"
       >
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
           <path d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8.009 8.009 0 0 1-8 8z" />

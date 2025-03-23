@@ -43,32 +43,36 @@ const ColorChanger = () => {
   }, [colors.length]);
 
   return (
-    <div
-      className={`h-screen ${colors[currentColorIndex]} transition-all duration-500`}
-    >
-      <div className="space-y-12 sm:space-y-24 mt-10 sm:mt-14">
-        <hr />
-        <h1 className="text-center text-3xl sm:text-5xl font-bold mb-4">
-          Our Committees
-        </h1>
-        <div className="flex flex-col sm:flex-row items-center">
-          <img
-            className="transform sm:-translate-y-32 sm:-translate-x-10"
-            style={{ height: "150px", margin: "0 5px 50px 20px" }}
-            src={photo}
-            alt=""
-          />
-          <p className="text-center sm:text-left text-lg sm:text-xl font-bold mb-32 sm:-translate-y-20 px-4 sm:px-0">
-            We have various committees, including Organizing, IT, HR, PR, Media
-            and Marketing, and scientific all focused on helping members improve
-            their soft and hard skills.
-          </p>
+    <div className={`min-h-screen ${colors[currentColorIndex]} transition-all duration-1000 py-10 px-4 sm:px-6 lg:px-8`}>
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-12">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+            Our Committees
+          </h1>
+          <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full"></div>
         </div>
-        <div className="sm:-translate-y-40 ">
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-16">
+          <div className="flex justify-center md:justify-start">
+            <img
+              className="h-32 sm:h-40 md:h-48 lg:h-56 object-contain rounded-lg shadow-lg transform transition-transform duration-500 hover:scale-105"
+              src={photo}
+              alt="Committee members"
+            />
+          </div>
+          <div>
+            <p className="text-lg md:text-xl font-medium text-gray-800 leading-relaxed">
+              We have various committees, including <span className="font-bold text-blue-600">Organizing</span>, <span className="font-bold text-indigo-600">IT</span>, <span className="font-bold text-purple-600">HR</span>, <span className="font-bold text-pink-600">PR</span>, <span className="font-bold text-blue-600">Media and Marketing</span>, and <span className="font-bold text-indigo-600">Scientific</span> all focused on helping members improve their soft and hard skills.
+            </p>
+          </div>
+        </div>
+        
+        <div className="mt-44">
           <ImageSlider images={images} />
         </div>
       </div>
     </div>
+
   );
 };
 
